@@ -1,0 +1,118 @@
+html {
+	height: 100%;
+	background-color: #010f29
+}
+
+body {
+	background-image: url("portfolio-bkg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%; 
+	margin: 0; 
+	padding: 1rem;
+}
+
+.button-grid {
+	display: table;
+	height: 100%;
+}
+
+button {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	display: table-cell;
+	margin: 1rem; 
+	height: 30%; 
+	width: 22.5%;
+	border-radius: 3px;
+	border: 0;
+}
+
+.visible {
+	box-shadow: inset 0px 0px 20px darkgrey;
+}
+
+.visible a {
+	font-size: 3rem;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 3px 3px #000;
+}
+
+.clear {
+	background-color: transparent; 
+	border: 0;
+}
+
+.clear > a {
+	color: transparent;
+}
+
+.aboutme, 
+.nyt, 
+.karma, 
+.webport {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+
+.aboutme:hover, 
+.nyt:hover, 
+.karma:hover, 
+.webport:hover {
+	opacity: 0.8;
+}
+
+.aboutme {
+	background-image: url("portfolio-aboutme.jpg");
+}
+
+.nyt {
+	background-image: url("portfolio-times.jpg");
+}
+
+.karma {
+	background-image: url("portfolio-karma.jpg")
+}
+
+.webport {
+	background-image: url("portfolio-webport.jpg");
+}
+
+.coming-soon {
+	background-color: #000;
+	opacity: 0.4;
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		background-image: url("port-bkg-mobile.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: fixed;
+		margin: 0;
+		padding: 1rem;
+}	
+
+	.button-grid {
+		width: 100%;
+		box-sizing: border-box;
+		margin: 28% 25% 0 25%;
+	}
+
+	.button-grid > button {
+		display: table-column;
+		align-items: center;
+		width: 50%;
+		height: 25%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.visible > a {
+		font-size: 2rem;
+	}
+}
