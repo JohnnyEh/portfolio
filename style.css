@@ -1,5 +1,6 @@
 html {
 	height: 100%;
+	width: auto;
 	background-color: #010f29
 }
 
@@ -90,9 +91,9 @@ button {
 @media screen and (max-width: 1000px) {
 	body {
 		background-image: url("port-bkg-mobile.jpg");
-		background-size: 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: fixed;
+		height: 100%;
 		margin: 0;
 		padding: 1rem;
 }	
